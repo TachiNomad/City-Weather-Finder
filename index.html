@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="container-fluid text-center text-white bg-dark p-2 weather-header">
+    <h1>Weather Dashboard</h1>
+  </header>
+
+
+<br />
+<br />
+<form id="cityForm" class="d-flex justify-content-center">
+    <label for="city">Enter City Name:   </label>
+    <input type="text" id="city" name="city" />
+    <br /><br />
+    <input id="add-weather" type="submit" value="Submit" />
+    <a class="btn btn-primary" href="#History" role="button">History</a>           
+</form>
+
+<br />
+<br />
+
+<!--Days information information-------------------------------------------------------- -->
+<h1  class="d-flex justify-content-center">5 day forecast</h1>
+<div id="output"></div> 
+
+<!-- present main info-------------------------------------------------- -->
+  <div class="jumbotron" id="History">
+    <h1 class="display-4">Location History</h1>
+    <div id="main"></div> 
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./assets/javascript.js"></script>
+</body>
+
+</html>
