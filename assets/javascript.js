@@ -2,7 +2,7 @@ var APIKey = "d09804b968d33081f61891d0e45cea70";
 
 function getWeather(query) {
   var url =
-    "http://api.openweathermap.org/data/2.5/forecast?q=" +
+    "https://api.openweathermap.org/data/2.5/forecast?q=" +
     query +
     "&units=imperial&APPID=" + APIKey;
   fetch(url)
